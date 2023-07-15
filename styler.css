@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #e2f2fd;
+
+}
+
+.popup {
+    position: absolute;
+    top: -25%;
+    visibility: hidden;
+    left: 50%;
+    display: flex;
+
+    width: 490px;
+    height: 200px;
+    border-radius: 5px;
+    padding: 13px 17px 20px;
+    background: #fff;
+    border-top: 4px solid blue;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0 10px 25px 1px #3457dc1a;
+    transform: translateX(-50%);
+    transition: all 0.25s ease;
+}
+.popup.main {
+    top:0%;
+    visibility: visible;
+}
+
+.popup .icon i {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: red;
+
+}
+ .popup.online .icon i  {
+    background:rgb(154, 224, 154);
+}
+
+.popup .title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.popup .desc {
+    height: 75px;
+    color: #474747;
+    font-weight: 650;
+    margin: 10px 0px 7px;
+    font-size: 1.01rem;
+}
+
+.popup .retry {
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background: #5372F0;
+    border-radius: 9px;
+    padding: 9px 15px;
+    font-size: 0.99rem;
+    font-weight: 550;
+}
+@media screen and (max-width:550px) {
+    .popup {
+        width: 100%;
+        padding: 10px 15px 17px;
+    }
+    
+}
